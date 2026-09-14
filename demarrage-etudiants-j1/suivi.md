@@ -26,8 +26,8 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 ## TP03 — Formulaire
 
 - Hypothèse : Entrée dans le champ = nouvelle ligne
-- Action :
-- Résultat :
+- Action : J'ai ajouté les éléments nécessaires au HTML ainsi que copié le JS
+- Résultat : J'ai mis à jour le CSS, changé le principal, et ajouté certains éléments qui n'étaient pas là
 - Point non compris :
 
 ## TP04 — Responsive
@@ -58,7 +58,7 @@ Si Node ou Git bloque, note le message exact et continue en local sans attendre.
 ## Auto-revue finale
 
 - Ce qui s'affiche bien :
-- Ce qui reste fragile au clavier ou à 360 px :
+- Ce qui reste fragile au clavier ou à 360 px : Lorsqu'un élément de liste est créé, si le mot est trop long à 360px, il déborde
 - Ce que je veux revoir en capsule :
 
 ## Rappel Git prudent
