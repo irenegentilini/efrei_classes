@@ -4,8 +4,8 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP00 — Diagnostic
 
-- Hypothèse :
-- Action :
+- Hypothèse : when changing the p to label, the spacing changed, probably due to the fact that the css has no label element yet.
+- Action : I added the main. I changed the look of the page by changing the headers sizes. I changed the p for etiquette with label. It changed the spacing. I put border box for the main and for the input, fixing also the input's width.
 - Résultat :
 - Point non compris :
 

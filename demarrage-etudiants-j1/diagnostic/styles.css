@@ -7,7 +7,7 @@ body {
 }
 
 .page {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 16px;
   background: #f6f6f6;
@@ -27,12 +27,15 @@ body {
   background: #fff;
   border: 2px solid #333;
   padding: 24px;
-  width: 960px;
+  max-width: 960px;
+  box-sizing: border-box;
 }
 
 .etiquette {
   margin-bottom: 4px;
   color: #222;
+  box-sizing: border-box;
+  display: block;
 }
 
 .contenu p {
@@ -40,9 +43,11 @@ body {
 }
 
 input {
-  width: 960px;
+  max-width: 900px;
   padding: 8px;
+  box-sizing: border-box;
   border: 1px solid #888;
+  display: block;
 }
 
 .bouton {
