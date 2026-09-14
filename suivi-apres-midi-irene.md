@@ -12,12 +12,14 @@ Recopiez ce bloc autant de fois que nécessaire.
 
 ### TP…
 
-- J'ai prédit :
-- Nous avons fait :
-- J'ai observé :
-- J'ai compris :
-- Je n'ai pas compris :
-- Réponse à la question « Dans le suivi » du TP :
+- J'ai prédit : Rien, ce n'était qu'une mise en place pour le programme.
+- Nous avons fait : Nous avons créé le projet GitHub partagé.
+Nous avons vérifié que le programme réalisé dans la matinée fonctionnait correctement, sans erreur.
+Nous avons ajouté les éléments nécessaires pour la partie de l'après-midi.
+- J'ai observé : J'ai remarqué qu'il n'y avait pas d'erreur 404.
+- J'ai compris : J'ai compris ce que nous allons faire dans les prochains jours et comment gérer GitHub avec ma collègue.
+- Je n'ai pas compris : Rien, je pense que pour l'instant c'était facile.
+- Réponse à la question « Dans le suivi » du TP : C'est la ligne « event.preventDefault(); » parce que normalement, le navigateur recharge par défaut, mais la ligne l'empêche de faire ça. La preuve est que quand on retire la ligne, le navigateur recharge après envoi.
 
 ## Épreuve de l'explication (TP12)
 
