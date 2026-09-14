@@ -2,9 +2,9 @@
 
 **Noté. Un fichier par étudiant, écrit avec vos mots.** Une phrase honnête (« j'ai essayé X, j'ai vu Y, je ne comprends pas pourquoi ») rapporte plus qu'une phrase parfaite recopiée.
 
-- Nom : 
-- Binôme :
-- Atelier utilisé (le mien, celui du binôme, la reprise) :
+- Nom : GENTILINI Irene
+- Binôme : GENTILINI Irene et LOUKKAL Sarah
+- Atelier utilisé (le mien, celui du binôme, la reprise) : le mien
 
 ## Pour chaque TP abordé
 
