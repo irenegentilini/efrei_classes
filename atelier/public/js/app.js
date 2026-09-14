@@ -15,9 +15,18 @@ formulaire?.addEventListener('submit', (event) => {
 
   const texte = champ.value.trim();
 
-  if (texte === '') {
+  if (texte === "") {
     statut.textContent = 'Le message ne doit pas être vide.';
+    champ.focus()
+    champ.value = ""
     return;
+  }
+  else {
+    var li = document.createElement("li");
+    li.textContent = "Vous : "+ champ.value.trim();
+    messages.appendChild(li);
+    champ.value = ""
+    champ.focus()
   }
 
   if (statut) {
