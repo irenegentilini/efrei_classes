@@ -7,7 +7,7 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 - Hypothèse : when changing the p to label, the spacing changed, probably due to the fact that the css has no label element yet.
 - Action : I added the main. I changed the look of the page by changing the headers sizes. I changed the p for etiquette with label. It changed the spacing. I put border box for the main and for the input, fixing also the input's width.
 - Résultat :
-- Point non compris :
+- Point non compris : i don't understand this sentence "Les deux fonctions retournent volontairement `false` et `[]` en starter incomplet. Testez à la main dans votre tête avec un cas normal, un cas limite (3 et 40 caractères, espaces autour) et un cas d'erreur."
 
 ## TP01 — Démarrer
 
