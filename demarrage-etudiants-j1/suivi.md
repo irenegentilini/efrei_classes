@@ -25,14 +25,14 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP03 — Formulaire
 
-- Hypothèse :
+- Hypothèse : Entrée dans le champ = nouvelle ligne
 - Action :
 - Résultat :
 - Point non compris :
 
 ## TP04 — Responsive
 
-- Hypothèse :
+- Hypothèse : Le texte passe à une nouvelle ligne dans une zone de texte mais dépasse dans un élément normal
 - Action :
 - Résultat :
 - Point non compris, test 360 / 1280 :
