@@ -11,15 +11,15 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP01 — Démarrer
 
-- Hypothèse :
-- Action :
+- Hypothèse : si le serveur tourne mais le js ne charge pas on voit "Le serveur fonctionne. Aujourd’hui, nous construisons notre interface." mais pas 'Votre point de départ est prêt.'
+- Action : lancer le serveur
 - Résultat :
 - Point non compris :
 
 ## TP02 — HTML
 
-- Hypothèse :
-- Action :
+- Hypothèse : quand on change main pour div, le comportement change seulment si le css définit des comportements différents de ceux par défaut.
+- Action : added a header. added a section with h2
 - Résultat :
 - Point non compris :
 
