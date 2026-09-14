@@ -32,6 +32,14 @@ Quand le message est seulement des espaces, le curseur n'est pas renvoyé au dé
 - Je n'ai pas compris : pourquoi le bouton est de type submit et pas click
 - Réponse à la question « Dans le suivi » du TP : innerHTML ne lit pas le texte comme du plain text, mais comme HTML, donc <b>gras</b> aurait été en gras et sans les <b>.
 
+### TP08
+
+- J'ai prédit : 
+- Nous avons fait : On a créé Brain.js avec deux fonctions. La première fait un contrôle du texte renseigné dedans la textarea et crée un message d'erreur dans le cas où le texte ne respecte pas les attentes. La deuxième fonction fonctionne comme cerveau, et elle répond à certains mots avec des messages spéciaux. On a changé app.js pour qu'elle utilise les fonctions de brain.js.
+- J'ai observé : Même si un input comme 123 semble être un numéro, il est toujours une chaîne et donc ça passe au contrôle.
+- J'ai compris : J'ai compris comment faire interagir différents fichiers de JavaScript.
+- Je n'ai pas compris : Pourquoi les checks pour les erreurs ne pouvaient pas être faits dans app.js
+- Réponse à la question « Dans le suivi » du TP : Parce que c'est important de séparer pour raisons de cybersécurité.
 
 ## Épreuve de l'explication (TP12)
 

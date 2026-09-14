@@ -1,3 +1,5 @@
+import { validateMessage, replyTo } from './brain.js';
+
 document.querySelector('#status').textContent = 'Votre point de départ est prêt.';
 
 const formulaire = document.querySelector('#chat-form');
@@ -13,9 +15,9 @@ const messages = document.querySelector('#messages');
 formulaire?.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const texte = champ.value.trim();
+  //const texte = champ.value.trim();
 
-  if (texte === "") {
+  /*if (texte === "") {
     statut.textContent = 'Le message ne doit pas être vide.';
     champ.focus()
     champ.value = ""
@@ -26,6 +28,25 @@ formulaire?.addEventListener('submit', (event) => {
     li.textContent = "Vous : "+ champ.value.trim();
     messages.appendChild(li);
     champ.value = ""
+    champ.focus()
+  }*/
+
+  const result = validateMessage(champ.value);
+
+  if (!result.ok) {
+    statut.textContent = result.error;
+    champ.focus()
+    champ.value = ""
+    return;
+  }
+  else {
+    var liVous = document.createElement("li");
+    liVous.textContent = "Vous : "+ result.value;
+    messages.appendChild(liVous);
+    var liChatbot = document.createElement("li");
+    liChatbot.textContent = "Cap Web : "+ replyTo(champ.value);
+    messages.appendChild(liChatbot);
+    champ.value = "";
     champ.focus()
   }
 
