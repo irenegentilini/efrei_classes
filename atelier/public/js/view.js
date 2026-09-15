@@ -1,6 +1,6 @@
 export function renderMessages(messages, container) {
   const lignes = [];
-
+ 
   messages.forEach((message) => {
     const li = document.createElement('li');
 
@@ -12,6 +12,6 @@ export function renderMessages(messages, container) {
 
     lignes.push(li);
   });
-
+  
   container.replaceChildren(...lignes);
 }
