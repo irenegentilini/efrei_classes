@@ -8,10 +8,23 @@ const statut = document.querySelector('#status');
 const versionElt = document.querySelector('#version');
 const submit = document.querySelector('#submit');
 
+const effacer = document.querySelector('#effacer')
 
 const champ = document.querySelector('#message');
 const messages = document.querySelector('#messages');
 const historique = [];
+
+const localHistorique = localStorage.getItem('capweb.historique');
+
+if (localHistorique) { //if it exists
+  try{
+    historique.push(...JSON.parse(localHistorique));
+    renderMessages(historique, messages);
+  }
+  catch{
+    statut.textContent = "Désolé, je n'ai pas pu récupérer la conversation.";
+  }
+}
 
 // J1 : interface seule, on bloque l’envoi et on l’explique.
 formulaire?.addEventListener('submit', (event) => {
@@ -19,6 +32,7 @@ formulaire?.addEventListener('submit', (event) => {
 
   //const texte = champ.value.trim();
 
+  //TP07
   /*if (texte === "") {
     statut.textContent = 'Le message ne doit pas être vide.';
     champ.focus()
@@ -32,6 +46,25 @@ formulaire?.addEventListener('submit', (event) => {
     champ.value = ""
     champ.focus()
   }*/
+
+  //TP08
+    /* if (!result.ok) {
+    statut.textContent = result.error;
+    champ.focus()
+    champ.value = ""
+    return;
+  }
+  else {
+    var liVous = document.createElement("li");
+    liVous.textContent = "Vous : "+ result.value;
+    messages.appendChild(liVous);
+    var liChatbot = document.createElement("li");
+    liChatbot.textContent = "Cap Web : "+ replyTo(champ.value);
+    messages.appendChild(liChatbot);
+    champ.value = "";
+    champ.focus()
+  }
+ */
 
   const result = validateMessage(champ.value);
 
@@ -53,12 +86,21 @@ formulaire?.addEventListener('submit', (event) => {
     renderMessages(historique, messages);
     champ.value = "";
     champ.focus();
-}
+    localStorage.setItem('capweb.historique', JSON.stringify(historique))
+  }
 
   if (statut) {
     statut.textContent = 'Interface prête ; les réponses arrivent au J2.';
   }
 
+});
+
+effacer?.addEventListener('click', (event) => {
+  if (confirm("Effacer la conversation?")) {
+    historique.length = 0;
+    localStorage.removeItem('capweb.historique');
+    renderMessages(historique, messages);
+  }
 });
 
 // Version du serveur local, échec discret si indisponible.

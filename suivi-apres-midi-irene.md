@@ -34,12 +34,61 @@ Quand le message est seulement des espaces, le curseur n'est pas renvoyé au dé
 
 ### TP08
 
-- J'ai prédit : 
+- J'ai prédit : Les réponses de Cap Web ne sembleront pas partie d'un chat, parce que tous les messages sont du même côté.
 - Nous avons fait : On a créé Brain.js avec deux fonctions. La première fait un contrôle du texte renseigné dedans la textarea et crée un message d'erreur dans le cas où le texte ne respecte pas les attentes. La deuxième fonction fonctionne comme cerveau, et elle répond à certains mots avec des messages spéciaux. On a changé app.js pour qu'elle utilise les fonctions de brain.js.
 - J'ai observé : Même si un input comme 123 semble être un numéro, il est toujours une chaîne et donc ça passe au contrôle.
 - J'ai compris : J'ai compris comment faire interagir différents fichiers de JavaScript.
 - Je n'ai pas compris : Pourquoi les checks pour les erreurs ne pouvaient pas être faits dans app.js
 - Réponse à la question « Dans le suivi » du TP : Parce que c'est important de séparer pour raisons de cybersécurité.
+
+### TP09
+
+- J'ai prédit : 
+- Nous avons fait : Nous avons créé un nouveau fichier " view.js ", qui, comme brain.js, n'a pas accès au document HTML. Dans ce fichier, on a une fonction qui, à chaque nouveau message, repopule la " unordered list " avec tous les messages et réponses de Cap Web..
+Cela sert à maintenir un historique complet.
+- J'ai observé : les trois points ne sont pas pour un simple exemple, mais ils sont un vrai opérateur qui sépare un array en ses éléments.
+- J'ai compris : À chaque fois qu'il y a un nouveau message, on parcourt tout l'historique, et on replace tous les éléments de la « unordered list » avec et les anciens messages et le nouveau avec la nouvelle réponse de Cap Web.
+- Je n'ai pas compris : pourquoi, comme pour brain.js, on doit mettre le fichier dans la liste de fichiers blancs au-dessus de app.js.
+- Réponse à la question « Dans le suivi » du TP : app.js interagit avec le fichier HTML.
+brain.js « pense », et donc filtre les messages et crée une réponse pour chaque message.
+view.js gère comme les messages sont vus, en recréant la « ul » indirectement à chaque fois qu'un message est envoyé, sans accès direct au html.
+
+### TP10
+
+- J'ai prédit : 
+- Nous avons fait : 
+- J'ai observé : 
+- J'ai compris : 
+- Je n'ai pas compris : 
+- Réponse à la question « Dans le suivi » du TP : Je pensais que http://localhost:3000 et http://127.0.0.1:3000/ étaient la même chose, et donc je pensais que les deux allaient montrer la même conversation.
+En réalité, ce n'est pas le cas et donc je pense que le serveur les voit comme deux choses différentes, et les deux ont des stockages locales différentes.
+
+### TP11
+
+- J'ai prédit : 
+- Nous avons fait : 
+- J'ai observé : 
+- J'ai compris : 
+- Je n'ai pas compris : 
+- Réponse à la question « Dans le suivi » du TP : 
+
+### TP12
+
+- J'ai prédit : 
+- Nous avons fait : 
+- J'ai observé : 
+- J'ai compris : 
+- Je n'ai pas compris : 
+- Réponse à la question « Dans le suivi » du TP : 
+
+### TP13
+
+- J'ai prédit : 
+- Nous avons fait : 
+- J'ai observé : 
+- J'ai compris : 
+- Je n'ai pas compris : 
+- Réponse à la question « Dans le suivi » du TP : 
 
 ## Épreuve de l'explication (TP12)
 
