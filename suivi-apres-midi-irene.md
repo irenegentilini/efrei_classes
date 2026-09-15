@@ -55,11 +55,14 @@ view.js gère comme les messages sont vus, en recréant la « ul » indirectemen
 
 ### TP10
 
-- J'ai prédit : 
-- Nous avons fait : 
-- J'ai observé : 
-- J'ai compris : 
-- Je n'ai pas compris : 
+- J'ai prédit : Avec ces modifications, on aura un comportement de la page où, même si on la recharge, la conversation reste affichée, et on pourra l'effacer manuellement avec le nouveau bouton.
+- Nous avons fait : On utilise localStorage, qui sauvegarde la conversation dans le navigateur. Au début, on a utilisé localStorage dans "formulaire?.addEventListener", pour qu'il soit rempli à chaque fois qu'un nouveau message est créé.
+Après, on l'a utilisé au début du fichier, pour que, au démarrage, il soit lu pour afficher la conversation sauvegardée. On l'a fait en remplissant "historique" avec les contenus de "localStorage" et en l'affichant avec la fonction créée pendant le TP09 « renderMessages ».
+Après, on a créé un nouveau bouton dans l'HTML.
+On l'a lié au JavaScript avec "const effacer = document.querySelector('#effacer')". Cet élément écoute un event click, et quand le bouton est cliqué, grâce à "confirm()", un pop up est affiché pour demander la confirmation. Si l'utilisateur confirme, et l'historique et le localStorage sont vidés dans la fonction pour l'event click.
+- J'ai observé : Les messages sont sauvegardés même si le serveur est stoppé et redémarré. Ça veut dire que localStorage stocke les données, pas sur le serveur, mais dans le navigateur.
+- J'ai compris : J’ai compris comment localStorage permet de sauvegarder et de récupérer des données dans le navigateur.
+- Je n'ai pas compris : Je ne suis pas sûre si les données sont sauvegardées même si on ferme le navigateur.
 - Réponse à la question « Dans le suivi » du TP : Je pensais que http://localhost:3000 et http://127.0.0.1:3000/ étaient la même chose, et donc je pensais que les deux allaient montrer la même conversation.
 En réalité, ce n'est pas le cas et donc je pense que le serveur les voit comme deux choses différentes, et les deux ont des stockages locales différentes.
 
