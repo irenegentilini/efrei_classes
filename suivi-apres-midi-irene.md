@@ -68,7 +68,8 @@ En réalité, ce n'est pas le cas et donc je pense que le serveur les voit comme
 
 ### TP11
 
-- J'ai prédit : 
+- J'ai prédit : Je pense que ce fichier sert à faire des tests automatiques pour voir si le programme respecte les règles définies avant, sans devoir écrire manuellement dans notre navigateur.
+Je pense que les tests vont passer parce que tout fonctionne et normalement, on a respecté les règles.
 - Nous avons fait : 
 - J'ai observé : 
 - J'ai compris : 
